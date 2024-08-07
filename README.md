@@ -15,21 +15,18 @@ $ g++ -Wall -std=c++11 arvore.cpp catch_amalgamated.cpp
 A saída resumida do teste (código exemplo):
 ```
 $ ./a.out --reporter compact --success
-arvore.cpp:174: passed: abb_vazio(a) == true for: true == true
-arvore.cpp:182: passed: abb_vazio(a) == false for: false == false
-arvore.cpp:194: failed: saida == resultado for: { 5 } == { 5, 3, 7 }
-arvore.cpp:205: failed: saida == resultado for: { 1 } == { 2, 1, 3 }
-arvore.cpp:216: failed: saida == resultado for: { 3 } == { 2, 1, 3 }
-arvore.cpp:227: failed: saida == resultado for: { 5 } == { 7, 5, 10 }
-arvore.cpp:238: failed: saida == resultado for: { 5 } == { 3, 1, 5 }
-arvore.cpp:247: failed: abb_vazio(a) == true for: false == true
-arvore.cpp:259: failed: saida == resultado for: { 4 } == { 6, 4, 7 }
-arvore.cpp:270: failed: saida == resultado for: { 1 } == { 4, 2, 1, 3, 6, 5, 7 }
-arvore.cpp:281: failed: saida == resultado for: { 41 }
+arvore.cpp:176: passed: abb_vazio(a) == true for: true == true
+arvore.cpp:184: passed: abb_vazio(a) == false for: false == false
+arvore.cpp:196: failed: saida == resultado for: { 5 } == { 5, 3, 7 }
+arvore.cpp:207: failed: saida == resultado for: { 1 } == { 2, 1, 3 }
+arvore.cpp:218: failed: saida == resultado for: { 3 } == { 2, 1, 3 }
+arvore.cpp:229: failed: saida == resultado for: { 5 } == { 7, 5, 10 }
+arvore.cpp:240: failed: saida == resultado for: { 5 } == { 3, 1, 5 }
+arvore.cpp:252: failed: saida == resultado for: { 1 } == { 4, 2, 1, 3, 6, 5, 7 }
+arvore.cpp:264: failed: saida == resultado for: { 41 }
 ==
 { 41, 20, 11, 26, 23, 29, 55, 50, 65 }
-arvore.cpp:296: failed: saida == resultado for: { 50 } == { 30, 26, 24, 28, 52, 50, 60 }
-arvore.cpp:314: failed: saida == resultado for: { 41 } == {  }
-Failed 11 test cases, failed 11 assertions.
+test cases: 9 | 2 passed | 7 failed
+assertions: 9 | 2 passed | 7 failed
 ```
 
