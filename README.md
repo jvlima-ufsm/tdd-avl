@@ -9,7 +9,7 @@ O framework Catch2 consegue ser utilizado apenas com o arquivo header [catch.hpp
 
 Todos os testes estão prontos no arquivo [arvore.cpp](arvore.cpp). A compilação e teste pode ser feita com os comandos:
 ```
-$ g++ -Wall -std=c++11 arvore.cpp 
+$ g++ -Wall -std=c++11 arvore.cpp catch_amalgamated.cpp
 ```
 
 A saída resumida do teste (código exemplo):

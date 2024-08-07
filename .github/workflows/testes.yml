@@ -1,0 +1,21 @@
+name: TDD A6 - ed2024a
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Instala valgrind
+      run: sudo apt install -y valgrind
+    - name: Compila 
+      run: g++ -Wall -g *.cpp
+    - name: Roda testes no valgrind
+      run: valgrind --leak-check=full ./a.out --reporter compact --success
